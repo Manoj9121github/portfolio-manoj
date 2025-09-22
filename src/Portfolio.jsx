@@ -5,26 +5,151 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-emerald-50 text-gray-800 px-6 py-12">
       {/* Header */}
       <header className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold text-teal-700 mb-2">
-          Manoj Gollamandala
-        </h1>
-        <p className="text-xl font-medium text-sky-700">
-          Customer Success | Frontend Developer | Tech Support Enthusiast
-        </p>
-      </header>
+  <h1 className="text-5xl font-extrabold text-teal-700 mb-2">
+    Manoj Gollamandala
+  </h1>
+  <p className="text-xl font-medium text-sky-700 mb-4">
+    Frontend Developer | Customer Success | Tech Enthusiast
+  </p>
+
+  {/* Contact & Social Links */}
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-gray-700">
+    {/* Mobile */}
+    <p href="tel:+91XXXXXXXXXX" className="hover:text-teal-700 transition">
+      📞 +91 9121966949 
+    </p>
+
+    {/* GitHub */}
+    <a
+      href="https://github.com/Manoj9121github"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-teal-700 transition underline transition"
+    >
+      🐙 GitHub
+    </a>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/manoj-gollamandala-b37853264/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-teal-700 transition underline transition"
+    >
+      💼 LinkedIn
+    </a>
+  </div>
+</header>
+
 
       {/* About / Summary */}
       <section className="max-w-5xl mx-auto mb-16 text-center bg-white/70 rounded-xl shadow p-8">
         <p className="text-gray-700 leading-relaxed text-lg">
-          Enthusiastic professional with 4+ years of experience in banking
-          operations and customer-facing roles, now blending strong **tech
-          support** and **customer success expertise** with hands-on **frontend
-          development**. Passionate about creating seamless user experiences,
-          supporting clients with empathy and technical skill, and building
-          responsive, user-centric web applications using React.js, Next.js, and
-          modern frontend technologies.
+          Passionate <strong>Frontend Developer</strong> with hands-on experience
+          in building responsive, user-centric web applications using React.js,
+          Next.js, and modern frontend technologies. Interested in leveraging
+          my experience in <strong>customer success</strong> and <strong>tech
+          support</strong> to create seamless user experiences and provide
+          value-driven solutions. Enthusiastic about merging technology and
+          client support for maximum impact.
         </p>
       </section>
+
+      {/* Technical Skills */}
+      <section className="max-w-5xl mx-auto mb-16">
+        <h2 className="text-3xl font-semibold mb-6 text-center text-emerald-700">
+          Technical Skills
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {[
+            // Frontend first
+            "React.js",
+            "Next.js",
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Tailwind CSS",
+            "Bootstrap",
+            // Backend
+            "Express.js",
+            "PostgreSQL",
+            "RESTful APIs",
+            "Git & Agile/Scrum",
+            "Fetch/Axios",
+            // Support
+            "Onboarding & SaaS Support",
+            "Documentation",
+            "Relationship Management",
+            "Excel / Teams / Zoom",
+          ].map((tech) => (
+            <div
+              key={tech}
+              className="bg-gradient-to-br from-white to-sky-50 border border-emerald-100 rounded-xl p-4 text-center hover:shadow-lg transition"
+            >
+              {tech}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="max-w-5xl mx-auto mb-16">
+  <h2 className="text-3xl font-semibold mb-6 text-center text-emerald-700">
+    Projects
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {/* Tech / Frontend Projects */}
+    <div className="bg-gradient-to-br from-white to-emerald-50 shadow rounded-xl p-6 hover:shadow-lg transition">
+      <h3 className="text-xl font-bold text-teal-700">Supabase – E-Commerce Project</h3>
+      <p className="text-gray-600 mt-2">
+        Full-stack e-commerce web application powered by Supabase with
+        authentication, product data, and order management.
+      </p>
+      <a
+        href="https://supa-base-project-a7a4.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-4 bg-sky-500 hover:bg-sky-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
+      >
+        View Project
+      </a>
+    </div>
+
+    <div className="bg-gradient-to-br from-white to-emerald-50 shadow rounded-xl p-6 hover:shadow-lg transition">
+      <h3 className="text-xl font-bold text-teal-700">Dashboard – Data & Analytics</h3>
+      <p className="text-gray-600 mt-2">
+        Interactive dashboard visualizing data and graphs for compliance,
+        performance, and metrics tracking over time.
+      </p>
+      <a
+        href="https://assign-dashboard-app.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
+      >
+        View Project
+      </a>
+    </div>
+
+    {/* Support / Customer-oriented Project */}
+    <div className="bg-gradient-to-br from-white to-sky-50 shadow rounded-xl p-6 hover:shadow-lg transition">
+      <h3 className="text-xl font-bold text-teal-700">Sowjanya Enterprises</h3>
+      <p className="text-gray-600 mt-2">
+        Business website showcasing enterprise services and products,
+        demonstrating a client-focused approach.
+      </p>
+      <a
+        href="https://sowjanya-enterprises.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
+      >
+        View Project
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* Soft Skills */}
       <section className="max-w-5xl mx-auto mb-16">
@@ -53,40 +178,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Technical Skills */}
-      <section className="max-w-5xl mx-auto mb-16">
-        <h2 className="text-3xl font-semibold mb-6 text-center text-emerald-700">
-          Technical Skills
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          {[
-            "React.js",
-            "Next.js",
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "Tailwind CSS",
-            "Bootstrap",
-            "Express.js",
-            "PostgreSQL",
-            "RESTful APIs",
-            "Git & Agile/Scrum",
-            "Fetch/Axios",
-            "Onboarding & SaaS Support",
-            "Documentation",
-            "Relationship Management",
-            "Excel / Teams / Zoom",
-          ].map((tech) => (
-            <div
-              key={tech}
-              className="bg-gradient-to-br from-white to-sky-50 border border-emerald-100 rounded-xl p-4 text-center hover:shadow-lg transition"
-            >
-              {tech}
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Work Experience */}
       <section className="max-w-5xl mx-auto mb-16">
         <h2 className="text-3xl font-semibold mb-6 text-center text-emerald-700">
@@ -94,6 +185,7 @@ export default function Portfolio() {
         </h2>
 
         <div className="space-y-6">
+          {/* Frontend First */}
           <div className="bg-white shadow-md border-l-4 border-emerald-400 rounded-xl p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-bold text-teal-700">
               Frontend Developer – HextaSphere Technologies
@@ -110,9 +202,10 @@ export default function Portfolio() {
             </ul>
           </div>
 
+          {/* Support / Customer Roles */}
           <div className="bg-white shadow-md border-l-4 border-sky-400 rounded-xl p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-bold text-teal-700">
-              SWO | AM   – Central Bank of India
+              SWO | AM – Central Bank of India
             </h3>
             <p className="text-gray-600 text-sm mb-3">Sep 2018 – Sep 2022</p>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
@@ -124,66 +217,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
-      {/* Projects */}
-      {/* Projects */}
-<section className="max-w-5xl mx-auto mb-16">
-  <h2 className="text-3xl font-semibold mb-6 text-center text-emerald-700">
-    Projects
-  </h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {/* Project 1 */}
-    <div className="bg-gradient-to-br from-white to-emerald-50 shadow rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-bold text-teal-700">Sowjanya Enterprises</h3>
-      <p className="text-gray-600 mt-2">
-        Business website showcasing enterprise services and products.
-      </p>
-      <a
-        href="https://sowjanya-enterprises.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block mt-4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
-      >
-        View Project
-      </a>
-    </div>
-
-    {/* Project 2 */}
-    <div className="bg-gradient-to-br from-white to-sky-50 shadow rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-bold text-teal-700">Supabase Project</h3>
-      <p className="text-gray-600 mt-2">
-        A full-stack e-commerce web application powered by Supabase with
-        authentication, product data, and order features.
-      </p>
-      <a
-        href="https://supa-base-project-a7a4.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block mt-4 bg-sky-500 hover:bg-sky-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
-      >
-        View Project
-      </a>
-    </div>
-
-    {/* Project 3 */}
-    <div className="bg-gradient-to-br from-white to-emerald-50 shadow rounded-xl p-6 hover:shadow-lg transition">
-      <h3 className="text-xl font-bold text-teal-700">
-        Q-Mart (E-Commerce Storefront)
-      </h3>
-      <p className="text-gray-600 mt-2">
-        Full-stack e-commerce web application built with React.js, Next.js,
-        Express.js, and PostgreSQL.
-      </p>
-      <a
-        href="#"
-        className="inline-block mt-4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium px-4 py-2 rounded-full transition"
-      >
-        View Project
-      </a>
-    </div>
-  </div>
-</section>
-
 
       {/* Education */}
       <section className="max-w-5xl mx-auto mb-16 text-center">
